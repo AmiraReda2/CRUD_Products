@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: rgb(29, 136, 70);">
+    <div class="title text-center my-5">
+        <h1 style="color: white;">CRUD Operations</h1>
+    </div>
+    <div class="container  p-3 my-5  ">
+        <label  style="color: white;" for="productName">Product Name</label>
+        <input class="form-control my-3" type="text" id="productName">
+        <label  style="color: white;" for="productPrice">Product Price</label>
+        <input class="form-control my-3" type="number" id="productPrice">
+        <label  style="color: white;" for="productDesc">Product Description</label>
+        <textarea class="form-control my-3" name="" id="productDesc" cols="30" rows="10"></textarea>
+        <button  style="color: white;" onclick="sendData()" id="add"  class="btn btn-outline-primary">Add Product</button>
+        <button   style="color: white;" onclick="updateData()" id="update"  class="btn btn-outline-success">Update Product</button>
+    </div>
+    <div class="container my-5">
+        <table class="table text-center table-hover">
+            <thead>
+                <th style="color: white;">No.</th>
+                <th style="color: white;">Name</th>
+                <th style="color: white;">Price</th>
+                <th style="color: white;">Description</th>
+                <th style="color: white;">Actions</th>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
